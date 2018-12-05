@@ -42,6 +42,21 @@ public class Ejercicio3 {
 		return nums;
 	}
 	
+	public static int [] fix452(int [] nums) {
+	int j = 0,i=0;
+
+		while(nums.length<0 ) 
+		
+		if (nums[i] == 4 && nums[i+1] != 5) {
+			i++;
+		
+		while(nums.length!=5 && nums.length!=4);
+		j++;
+			nums[j] = nums[i + 1];
+			nums[i + 1] = 5;
+		}
+	return nums;
+}
 	/*
 	 * 0,25 puntos
 	 * 
@@ -50,7 +65,7 @@ public class Ejercicio3 {
 	 */
 	
 	public static void main(String[] args) {
-		
+		fix452(null);
 
 	}
 

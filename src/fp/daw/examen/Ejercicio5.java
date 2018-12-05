@@ -1,5 +1,7 @@
 package fp.daw.examen;
 
+import java.util.Scanner;
+
 public class Ejercicio5 {
 
 	/* 
@@ -22,8 +24,44 @@ public class Ejercicio5 {
 	 * mayor que 0. En caso contrario mostrará un mensaje de error y volverá a pedirla.
 	 */
 	
-	public static void main(String[] args) {
+	public static void  billete() {
+		Scanner sc=new Scanner(System.in);
 		
+		int cambio=0;
+	   int devolver = (int) (cambio * 100);
+	   
+		int total=0;
+
+	do{
+	
+		System.out.println("introduce billetees");
+	     cambio=sc.nextInt();
+	    
+	  
+	    
+	    
+	    
+	    
+	if(cambio>0) {
+		System.out.println("error ..vuelve a introducir");
+		if(cambio>=200) {
+			devolver%=200;
+		}if(cambio>=100) {
+			devolver%=100;	
+		}if(cambio>=50) {
+			devolver%=50;	
+		}if(cambio>=10) {
+			devolver%=10;
+		}if(cambio>=5) {
+			devolver%=5;
+		}
+	}
+	
+	}while(cambio>0);
+	   devolver%=100;
+	}
+	public static void main(String[] args) {
+		billete();
 
 	}
 

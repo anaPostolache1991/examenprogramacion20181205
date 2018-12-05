@@ -12,8 +12,21 @@ public class Ejercicio1 {
 	 * El método incluirá una única sentencia 'return' y no está permitido el
 	 * uso de variables booleanas.
 	 */
+	 
+	public static boolean contiene(String cadena) {
+		char[]letras={'c','a','s'};
 	
-	public static ...
+		for(int i=0;i<cadena.length() && i<letras.length;i++) {
+			if(cadena.charAt(i)==letras[i]) {
+				return true;
+			}
+		}
+		//System.out.println("false");
+		return false;
+		
+	}
+	
+	//public static ...
 	
 	/*
 	 * 0,25 puntos
@@ -23,7 +36,7 @@ public class Ejercicio1 {
 	 */
 	
 	public static void main(String[] args) {
-		
+		contiene("c");
 
 	}
 

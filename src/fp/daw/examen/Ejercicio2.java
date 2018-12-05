@@ -11,7 +11,18 @@ public class Ejercicio2 {
 	 * contenga los mismos caracteres que ésta y en el mismo orden. 
 	 */
 	
-	public static ...
+	public static char[] stringToArray(String cadena) {
+		int l=cadena.length();
+		
+		char[]letras=new char[l];
+		for(int i=0;i<cadena.length();i++) {
+			letras[i]=cadena.charAt(i);
+			System.out.print(letras[i]);
+		}
+		
+		return letras;
+		
+	}
 	
 	
 	/*
@@ -23,7 +34,7 @@ public class Ejercicio2 {
 	
 	public static void main(String[] args) {
 		
-
+		 stringToArray("cadena");
 	}
 
 }

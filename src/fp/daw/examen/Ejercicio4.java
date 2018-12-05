@@ -1,5 +1,7 @@
 package fp.daw.examen;
 
+import java.util.Arrays;
+
 public class Ejercicio4 {
 
 	/* 
@@ -12,7 +14,36 @@ public class Ejercicio4 {
 	 * Finalmente retornará el array.
 	 */
 	
-	public static ...
+	public static int[] arrayAleatorioOrdenado(int numero) {
+		int []vector=new int[numero];
+		int aux;
+		for(int i=0;i<vector.length;i++) {
+			
+			vector[i]=(int)Math.floor(Math.random()*(975-13579)+13579);
+			
+		   }
+	
+		
+	/*
+		for(int i=0;i<=4;i++) {
+			for(int j=0;i<4;i++) {
+				if(vector[i]<vector[i+1]) {
+					aux=vector[i];
+					vector[i]=vector[i+1];
+					vector[i+1]=aux;
+				}
+			}
+		}
+		
+		for(int i=0;i<4;i++) {
+			System.out.println(vector[i]);
+		}
+		*/
+		Arrays.sort(vector);
+		System.out.println("los numeros ordenados son :"+Arrays.toString(vector));
+		return vector;
+		
+	}
 	
 	/*
 	 * 0,25 puntos
@@ -22,7 +53,7 @@ public class Ejercicio4 {
 	 */
 	
 	public static void main(String[] args) {
-		
+		arrayAleatorioOrdenado(5);
 
 	}
 
